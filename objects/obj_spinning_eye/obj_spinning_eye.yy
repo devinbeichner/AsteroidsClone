@@ -1,11 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_color_changer",
+  "name": "obj_spinning_eye",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -30,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Asteroid_background",
-    "path": "sprites/Asteroid_background/Asteroid_background.yy",
+    "name": "spr_loopybear_eye",
+    "path": "sprites/spr_loopybear_eye/spr_loopybear_eye.yy",
   },
   "spriteMaskId": null,
   "visible": true,

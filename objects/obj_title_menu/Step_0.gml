@@ -35,6 +35,7 @@ if(accept_key){
 					menu_level = 1;
 					break;
 				case 3:
+					room_goto(rm_credits);
 					break;
 				case 4:
 					game_end()
@@ -43,18 +44,20 @@ if(accept_key){
 			break;
 		
 		case 1:
+			chosen_layer = layer_create(-100)
 			switch(pos){
 				case 0:
-					instance_create_layer(x, y, "Instances", obj_color_changer, {selection: "player"})
+					
+					instance_create_layer(x+800, y+200, chosen_layer, obj_color_changer, {selection: "player"})
 					break;
 				case 1:
-					instance_create_layer(x, y, "Instances", obj_color_changer, {selection: "bullets"})
+					instance_create_layer(x, y, chosen_layer, obj_color_changer, {selection: "bullets"})
 					break;
 				case 2:
-					instance_create_layer(x, y, "Instances", obj_color_changer, {selection: "explosion"})
+					instance_create_layer(x, y, chosen_layer, obj_color_changer, {selection: "explosion"})
 					break;
 				case 3:
-					instance_create_layer(x, y, "Instances", obj_color_changer, {selection: "rock"})
+					instance_create_layer(x, y, chosen_layer, obj_color_changer, {selection: "rock"})
 					break;
 				case 4:
 					menu_level = 0

@@ -3,11 +3,15 @@
 
 selection = "player"
 img = "spr_rock_big"
-xPos = 0;
-yPos = 0;
-xScl = 1;
-yScl = 1;
-show_debug_message(selection)
+
+width = 1000;
+height = 1000;
+
+pos = 0;
+
+op_border = 225;
+op_space = 40;
+
 switch(selection){
 	case "player":
 		img = "spr_player"
@@ -18,13 +22,17 @@ switch(selection){
 	case "bullets":
 		img = spr_bullet
 		break;
+	
 }
 
-color_choice[0] = c_yellow
-color_choice[1] = c_red
-color_choice[3] = c_teal
-color_choice[4] = c_green
-color_choice[5] = c_fuchsia
-color_choice[6] = c_purple
-color_choice[7] = c_white
-color_choice[8] = "select"
+color_choice[0] = "yellow"
+color_choice[1] = "red"
+color_choice[2] = "teal"
+color_choice[3] = "green"
+color_choice[4] = "fuchsia"
+color_choice[5] = "purple"
+color_choice[6] = "lime"
+color_choice[7] = "white"
+
+
+op_length = array_length(color_choice)

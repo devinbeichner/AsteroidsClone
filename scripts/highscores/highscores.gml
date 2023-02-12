@@ -4,8 +4,7 @@ function highscore_load(){
 	var file = working_directory + "/highscore";
 	try{
 		var handle = file_text_open_read(file);
-		global.leaderBoard = json_parse(file_text_read_string(handle));
-		show_debug_message("global leaderboard: " + string(global.leaderBoard))
+		global.leaderBoard = json_parse(file_text_read_string(handle))
 		file_text_close(handle)
 	}catch(_e){
 		show_debug_message("ERROR: " + string(_e))
